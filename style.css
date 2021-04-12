@@ -1,12 +1,17 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: 'Kumbh Sans', sans-serif;
 }
 
 .wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	height: 100vh;
 	background:
@@ -21,6 +26,7 @@
 	width: 320px;
 	border-radius: 5%;
 	background-color: white;
+	-webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.058);
 	box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.058);
 	overflow: hidden;
 }
@@ -41,6 +47,8 @@ img.user {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	border: 5px solid white;
 	border-radius: 50%;
@@ -72,16 +80,26 @@ p {
 }
 
 .stats {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0 auto;
 	padding-top: 15px;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	width: 80%;
 }
 
 .stats p {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
